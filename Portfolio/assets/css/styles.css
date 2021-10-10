@@ -1,14 +1,12 @@
-/*===== GOOGLE FONTS =====*/
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+/* CSS VARIABLES */
 
 :root {
     --header-height: 3rem;
     --font-medium: 500;
 }
 
-/*===== Colorss =====*/
+/* Colors */
 
 :root {
     --first-color: #4E3870;
@@ -17,7 +15,7 @@
     --text-color: #697477;
 }
 
-/*===== Fonts & Typography =====*/
+/* Fonts & Typography */
 
 :root {
     --body-font: 'Montserrat', sans-serif;
@@ -36,7 +34,7 @@
     }
 }
 
-/*===== Margins =====*/
+/* Margins */
 
 :root {
     --mb-1: .5rem;
@@ -45,13 +43,13 @@
     --mb-4: 2rem;
 }
 
-/*===== z index =====*/
+/* z index */
 
 :root {
     --z-fixed: 100;
 }
 
-/*===== BASE =====*/
+/* BASE */
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -91,7 +89,7 @@ img {
     display: block;
 }
 
-/*===== CLASS CSS ===== */
+/* CLASS CSS */
 
 .section {
     padding: 3rem 0;
@@ -117,7 +115,7 @@ img {
     background-color: var(--first-color);
 }
 
-/*===== LAYOUT =====*/
+/* LAYOUT */
 
 .bd-grid {
     max-width: 1024px;
@@ -138,7 +136,7 @@ img {
     background-color: var(--first-color);
 }
 
-/*===== NAV =====*/
+/* NAV */
 
 .nav {
     height: var(--header-height);
@@ -184,7 +182,7 @@ img {
     cursor: pointer;
 }
 
-/*=== Show menu ===*/
+/* Show menu */
 
 .show {
     right: 0;
@@ -202,7 +200,7 @@ img {
     background-color: var(--first-color);
 }
 
-/*===== HOME =====*/
+/* HOME */
 
 .home {
     position: relative;
@@ -244,7 +242,7 @@ img {
     width: 295px;
 }
 
-/* ===== ABOUT =====*/
+/*  ABOUT */
 
 .about__container {
     justify-items: center;
@@ -256,14 +254,15 @@ img {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    /*width: 120px;
-    height: 120px;*/
+    width: 120px;
+    height: 120px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
 }
+
 .about__img img {
-    width:512px;
+    width: 512px;
 }
 
 .about__subtitle {
@@ -290,7 +289,7 @@ img {
     color: var(--first-color);
 }
 
-/* ===== SKILLS =====*/
+/*  SKILLS */
 
 .skills__container {
     row-gap: 2rem;
@@ -320,7 +319,7 @@ img {
     border-radius: .5rem;
 }
 
-/* ===== PORTFOLIO =====*/
+/*  PORTFOLIO */
 
 .portfolio {
     background-color: var(--white-color);
@@ -363,7 +362,7 @@ img {
     color: var(--dark-color);
 }
 
-/* ===== CONTACT =====*/
+/*  CONTACT */
 
 .contact__container {
     row-gap: 2rem;
@@ -408,7 +407,7 @@ img {
     cursor: pointer;
 }
 
-/* ===== FOOTER=====*/
+/* FOOTER */
 
 .footer {
     background-color: var(--dark-color);
@@ -441,7 +440,7 @@ img {
     color: var(--first-color);
 }
 
-/* ===== MEDIA QUERIES =====*/
+/* MEDIA QUERIES */
 
 /* For small devices */
 
@@ -506,10 +505,6 @@ img {
         width: 200px;
         height: 200px;
     }
-    /*
-    .about__img img {
-        width: 165px;
-    }*/
     .skills__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
@@ -539,7 +534,7 @@ img {
     }
 }
 
-/* Tall screens on mobile & desktop*/
+/* Tall screens on mobile & desktop */
 
 @media screen and (min-height: 721px) {
     .home__container {
